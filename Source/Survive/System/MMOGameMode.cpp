@@ -41,4 +41,24 @@ void AMMOGameMode::Tick(float DeltaSeconds)
 	UE_LOG(LogTemp, Log, TEXT("C++ Tick"));
 	Super::Tick(DeltaSeconds);
 }
+void AMMOGameMode::AddManager(UClass* Cls, ABaseManager* manager)
+{
+	if (ManagerMap.Contains(Cls))
+	{
+		ManagerMap[Cls] = manager;
+		UE_LOG(LogTemp, Log, TEXT("Overide Add Manager"));
+	}
+	else
+	{
+		ManagerMap.Add(Cls, manager);
+		manager->PreInitialize();
+	}
+}
+void AMMOGameMode::RemoveManager(UClass* Cls, ABaseManager* manager)
+{
+	if (ManagerMap.Contains(Cls))
+	{
+		ManagerMap.Remove(Cls);
+	}
+}
 AMMOGameMode* AMMOGameMode::sInstance = nullptr;

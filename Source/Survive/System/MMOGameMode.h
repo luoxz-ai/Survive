@@ -37,6 +37,10 @@ public:
 		}
 		return nullptr;
 	}
+	UFUNCTION(BlueprintCallable, Category = "C++ API")
+	void AddManager(UClass* Cls , ABaseManager* manager);
+	UFUNCTION(BlueprintCallable, Category = "C++ API")
+	void RemoveManager(UClass* Cls, ABaseManager* manager);
 private:
 	TMap<UClass*, ABaseManager*> ManagerMap;
 	static AMMOGameMode* sInstance;
