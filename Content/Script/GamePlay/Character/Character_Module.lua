@@ -1,0 +1,2 @@
+
+GP.Character = {}

@@ -1,0 +1,8 @@
+{
+	"BuildId": "10570792",
+	"Modules": 
+	{
+		"UnLua": "UE4Editor-UnLua.dll",
+		"UnLuaEditor": "UE4Editor-UnLuaEditor.dll"
+	}
+}
