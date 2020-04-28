@@ -37,9 +37,6 @@ public:
 		}
 		return nullptr;
 	}
-protected:
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "System")
-	TSubclassOf<class AGAMessageManager> GAMessageManagerClass;
 
 private:
 	TMap<UClass*, ABaseManager*> ManagerMap;

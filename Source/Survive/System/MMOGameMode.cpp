@@ -2,7 +2,6 @@
 
 
 #include "MMOGameMode.h"
-#include "System/GAMessageManager.h"
 void AMMOGameMode::Respawn(bool inplace)
 {
 }
