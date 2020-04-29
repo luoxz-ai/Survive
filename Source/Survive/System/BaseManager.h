@@ -21,5 +21,4 @@ public:
 	virtual void PostInitializeComponents();
 	virtual void EndPlay(const EEndPlayReason::Type EndPlayReason);
 	virtual void BeginPlay() override;
-
 };

@@ -2,9 +2,8 @@
 
 
 #include "MMOGameMode.h"
-void AMMOGameMode::Respawn(bool inplace)
-{
-}
+#include "System/MessageManager.h"
+#include "System/LuaManager.h"
 void AMMOGameMode::InitGame(const FString& MapName, const FString& Options, FString& ErrorMessage)
 {
 	UE_LOG(LogTemp, Log, TEXT("C++ InitGame"));
@@ -60,5 +59,8 @@ void AMMOGameMode::RemoveManager(UClass* Cls, ABaseManager* manager)
 	{
 		ManagerMap.Remove(Cls);
 	}
+}
+void AMMOGameMode::Respawn(bool inplace)
+{
 }
 AMMOGameMode* AMMOGameMode::sInstance = nullptr;

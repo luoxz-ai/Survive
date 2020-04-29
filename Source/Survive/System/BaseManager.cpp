@@ -2,7 +2,7 @@
 
 
 #include "BaseManager.h"
-
+#include "MMOGameMode.h"
 // Sets default values
 ABaseManager::ABaseManager()
 	:Super()

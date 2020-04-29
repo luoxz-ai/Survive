@@ -6,7 +6,7 @@ template<typename T>
 class ISingleton
 {
 public:
-	UFUNCTION(BlueprintCallable)
+	UFUNCTION(BlueprintCallable, Category = "C++ API")
 	static T* I()
 	{
 		static T* sInstance = nullptr;
