@@ -1,0 +1,216 @@
+syntax = "proto3";
+package Cmd;
+
+enum CommandList
+{
+  // LOGIN_USER_PROTOCMD
+  // 0~199
+  CMD_LOGIN_USER_START = 0; // 不要使用，作为标志用
+  CMD_ReqLoginUserCmd = 1;
+  CMD_CreateCharUserCmd = 2;
+  CMD_SnapShotUserCmd = 3;
+  CMD_SelectRoleUserCmd = 5;
+  CMD_LoginResultUserCmd = 6;
+  CMD_DeleteCharUserCmd = 7;
+  CMD_HeartBeatUserCmd = 8;
+  CMD_ServerTimeUserCmd = 9;
+  CMD_GMDeleteCharUserCmd = 10; // 暂时未用
+  
+  CMD_LOGIN_USER_END = 199; // 不要使用，作为标志用
+  CMD_Test = 200 
+  // ERROR_USER_PROTOCMD
+  // 200~399
+  CMD_ERROR_USER_START = 200; // 不要使用，作为标志用
+  CMD_RegErrUserCmd = 201;
+  CMD_KickUserErrorCmd = 202; // ServerOnly
+  CMD_MaintainUserCmd = 203; // 暂时未用
+  
+  
+  // SCENE_USER_PROTOCMD
+  // 400~599
+  CMD_SCENE_USER_START = 400; // 不要使用，作为标志用
+  CMD_SetUserDataCmd = 401;
+  CMD_SetNineDataCmd = 402;
+  
+  CMD_SCENE_USER_END = 599; // 不要使用，作为标志用
+  // SCENE_USER2_PROTOCMD
+  // 600~799
+  CMD_SCENE_USER2_START = 600; // 不要使用，作为标志用
+  
+  CMD_SCENE_USER2_END = 799; // 不要使用，作为标志用
+  
+
+  // SCENE_USER_SKILL_PROTOCMD
+  // 800~999
+  CMD_SCENE_USER_SKILL_START = 800; // 不要使用，作为标志用
+  CMD_SCENE_USER_SKILL_END = 999; // 不要使用，作为标志用
+
+
+  // SCENE_USER_QUEST_PROTOCMD
+  // 1000~1199
+  CMD_SCENE_USER_QUEST_START = 1000; // 不要使用，作为标志用
+  
+  CMD_SCENE_USER_QUEST_END = 1199; // 不要使用，作为标志用
+
+
+
+  // SCENE_USER_MAP_PROTOCMD
+  // 1200~1399
+  CMD_SCENE_USER_MAP_START = 1200; // 不要使用，作为标志用
+  
+  CMD_SCENE_USER_MAP_END = 1399; // 不要使用，作为标志用
+
+
+  // SCENE_USER_PARTNER_PROTOCMD
+  // 1400~1599
+  CMD_SCENE_USER_PARTNER_START = 1400; // 不要使用，作为标志用
+  
+  CMD_SCENE_USER_PARTNER_END = 1599; // 不要使用，作为标志用
+
+
+
+  // SESSION_USER_AUTHORIZE_PROTOCMD
+  // 2000~2199
+  CMD_SESSION_USER_AUTHORIZE_START = 2000; // 不要使用，作为标志用
+  
+  CMD_SESSION_USER_AUTHORIZE_END = 2199; // 不要使用，作为标志用
+  
+ 
+  // SCENE_USER_ITEM_PROTOCMD
+  // 2400~2599
+  CMD_SCENE_USER_ITEM_START = 2400; // 不要使用，作为标志用
+  
+  CMD_SCENE_USER_ITEM_END = 2599; // 不要使用，作为标志用
+  // SCENE_USER_MANA_PROTOCMD
+  // 2600~2799
+  CMD_ManaListCmd = 2600; //上线同步Mana
+  CMD_UpdateManaInfoCmd = 2601; //更新Mana信息
+  
+  
+  // SCENE_USER_STAGE_PROTOCMD
+  // 2800~2899
+  CMD_SCENE_USER_STAGE_START = 2800; // 不要使用，作为标志用
+
+  CMD_SCENE_USER_STAGE_END = 2899; // 不要使用，作为标志用
+
+  // 2900~2999
+  CMD_SCENE_USER_CHAT_START = 2900; // 不要使用，作为标志用
+  CMD_ChatMsgClientToGateCmd = 2901; // 接收Client的聊天消息
+  CMD_ChatMsgGateToClientCmd = 2902; // Gate转发来自ChatServer的消息到客户端
+  CMD_SCENE_USER_CHAT_END = 2999; // 不要使用，作为标志用
+
+  // Server Only(40000以后)
+  // RECORD_DATA_PROTOCMD
+  // 40000~40199
+  CMD_RECORD_DATA_START = 40000;  // 不要使用，作为标志用
+
+  CMD_RECORD_DATA_END = 40199;  // 不要使用，作为标志用
+
+
+
+  // TRADE_PROTOCMD
+  // 40200~40399
+  CMD_TRADE_START = 40200; // 不要使用，作为标志用
+  
+  CMD_TRADE_END = 40399;  // 不要使用，作为标志用
+
+
+
+  // SESSION_PROTOCMD
+  // 40400~40599
+  CMD_SESSION_START = 40400; // 不要使用，作为标志用
+  
+  CMD_SESSION_END = 40599;  // 不要使用，作为标志用
+
+
+
+  // GMTOOLS_PROTOCMD
+  // 40600~40799
+  CMD_GMTOOLS_START = 40600; // 不要使用，作为标志用
+  
+  CMD_GMTOOLS_END = 40799;  // 不要使用，作为标志用
+
+
+
+  // LOG_PROTOCMD
+  // 40800~40999
+  CMD_LOG_START = 40800; // 不要使用，作为标志用
+  
+  CMD_LOG_END = 40999; // 不要使用，作为标志用
+
+
+
+  // GATE_SUPER_PROTOCMD
+  // 41000~41199
+  CMD_GATE_SUPER_START = 41000; // 不要使用，作为标志用
+  
+  CMD_GATE_SUPER_END = 41199;  // 不要使用，作为标志用
+
+
+
+  // STAT_PROTOCMD
+  // 41400~41599
+  CMD_STAT_START = 41400; // 不要使用，作为标志用
+  
+  CMD_STAT_END = 41599;  // 不要使用，作为标志用
+
+
+  // GZONE_PROTOCMD
+  // 42200~42399
+  CMD_GZONE_START = 42200; // 不要使用，作为标志用
+  CMD_UpdateActiveOnlineGZoneCmd = 42201;
+  CMD_GZONE_END = 42399;  // 不要使用，作为标志用
+
+
+
+  // MATCHS_PROTOCMD
+  // 42400~42599
+  CMD_MATCHS_START = 42400; // 不要使用，作为标志用
+  
+  CMD_MATCHS_END = 42599;  // 不要使用，作为标志用
+
+
+
+
+  // GATEWAY_CMD
+  // 43200~43399
+  
+  
+  CMD_GATEWAY_END = 43399;  // 不要使用，作为标志用
+
+  // SYSTEM_PROTOCMD
+  // 43600~43799
+  CMD_SYSTEM_START = 43600; // 不要使用，作为标志用
+ 
+  
+  CMD_SYSTEM_END = 43799;  // 不要使用，作为标志用
+
+  CMD_GATEWAY_CHAT_START = 43800; // 不要使用，作为标志用
+  CMD_GateToChatServerCmd = 43801; // Gate转发聊天到ChatServer
+  CMD_ChatServerToGateCmd = 43802; // Gate接收ChatServer的消息
+
+  CMD_ChatServerErrorCmd = 43805; // 接收ChatServer的错误信息
+  CMD_GATEWAY_CHAT_END = 43999; // 不要使用，作为标志用
+
+  // MAX
+  CMD_MAX = 65535;
+}
+
+
+message Nonce
+{
+  uint32 timestamp = 1;
+  uint32 index = 2;
+  string sign = 3;
+}
+
+message WrapPacket
+{
+  CommandList cmd   = 1; // 协议编号
+  bytes   content   = 2; // 协议二进制
+  uint32  timestamp = 3; // 时间戳(只会增大)
+  uint32  seq       = 4; // 序列号(只会增大)
+  uint32  code      = 5; // 错误码
+}
+
+

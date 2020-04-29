@@ -12,7 +12,7 @@ local SetUProperty = SetUProperty
 local RegisterClass = RegisterClass
 local RegisterEnum = RegisterEnum
 local print = UEPrint
-
+print("*****************Unlua******************")
 _NotExist = _NotExist or {}
 local NotExist = _NotExist
 

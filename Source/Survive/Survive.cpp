@@ -2,4 +2,13 @@
 
 #include "Survive.h"
 #include "Modules/ModuleManager.h"
-IMPLEMENT_PRIMARY_GAME_MODULE( FDefaultGameModuleImpl, Survive, "Survive" );
+IMPLEMENT_PRIMARY_GAME_MODULE(FSurviveModule, Survive, "Survive" );
+void FSurviveModule::StartupModule()
+{
+	FModuleManager::Get().LoadModule(TEXT("SurviveEditor"));
+}
+
+void FSurviveModule::ShutdownModule()
+{
+
+}

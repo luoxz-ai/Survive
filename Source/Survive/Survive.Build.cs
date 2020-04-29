@@ -9,7 +9,7 @@ public class Survive : ModuleRules
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 	
 		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore" });
-
+		PublicDependencyModuleNames.AddRange(new string[] { "Unlua" });
 		PrivateDependencyModuleNames.AddRange(new string[] {  });
 		// avoid winsock.h and winsock2.h conflicts
 		PublicDefinitions.Add("ASIO_STANDALONE");

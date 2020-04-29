@@ -10,5 +10,6 @@ public class SurviveEditorTarget : TargetRules
 		Type = TargetType.Editor;
 
 		ExtraModuleNames.AddRange( new string[] { "Survive" } );
+		ExtraModuleNames.AddRange( new string[] { "SurviveEditor" } );
 	}
 }

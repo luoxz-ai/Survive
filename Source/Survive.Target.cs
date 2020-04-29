@@ -10,5 +10,6 @@ public class SurviveTarget : TargetRules
 		Type = TargetType.Game;
 
 		ExtraModuleNames.AddRange( new string[] { "Survive" } );
+		//ExtraModuleNames.AddRange( new string[] { "SurviveEditor" });
 	}
 }
