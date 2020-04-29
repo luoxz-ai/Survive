@@ -1,0 +1,14 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UE4Editor-UnLua-Win64-DebugGame.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"D:\ouczbs\Survive\Intermediate\Build\Win64\SurviveEditor\DebugGame\UnrealEd\SharedPCH.UnrealEd.NonOptimized.h.obj"
+"D:\ouczbs\Survive\Plugins\UnLua\Intermediate\Build\Win64\UE4Editor\DebugGame\UnLua\Module.UnLua.cpp.obj"
+"D:\ouczbs\Survive\Plugins\UnLua\Intermediate\Build\Win64\UE4Editor\DebugGame\UnLua\Module.UnLua.gen.cpp.obj"
+"D:\ouczbs\Survive\Plugins\UnLua\Intermediate\Build\Win64\UE4Editor\DebugGame\UnLua\Default.rc2.res"
+/OUT:"D:\ouczbs\Survive\Plugins\UnLua\Intermediate\Build\Win64\UE4Editor\DebugGame\UnLua\UE4Editor-UnLua-Win64-DebugGame.lib"
+/INCLUDE:IMPLEMENT_MODULE_UnLua

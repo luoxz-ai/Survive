@@ -1,0 +1,16 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.UnLuaEditor.cpp.obj": [
+			"UnLuaIntelliSenseCommandlet.cpp.obj",
+			"UnLuaEditor.cpp.obj",
+			"UnLuaEditorCommands.cpp.obj",
+			"UnLuaEditorCore.cpp.obj",
+			"UnLuaEditorStyle.cpp.obj"
+		],
+		"Module.UnLuaEditor.gen.cpp.obj": [
+			"UnLuaEditor.init.gen.cpp.obj",
+			"UnLuaIntelliSenseCommandlet.gen.cpp.obj"
+		]
+	}
+}

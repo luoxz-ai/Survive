@@ -1,0 +1,52 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.UnLua.cpp.obj": [
+			"LuaLib_Array.cpp.obj",
+			"LuaLib_Class.cpp.obj",
+			"LuaLib_Delegate.cpp.obj",
+			"LuaLib_Map.cpp.obj",
+			"LuaLib_MulticastDelegate.cpp.obj",
+			"LuaLib_Object.cpp.obj",
+			"LuaLib_PrimitiveTypes.cpp.obj",
+			"LuaLib_Set.cpp.obj",
+			"LuaLib_World.cpp.obj",
+			"CollisionHelper.cpp.obj",
+			"DefaultParamCollection.cpp.obj",
+			"DelegateHelper.cpp.obj",
+			"LuaContext.cpp.obj",
+			"LuaCore.cpp.obj",
+			"LuaDynamicBinding.cpp.obj",
+			"LuaFunctionInjection.cpp.obj",
+			"LuaLib_FColor.cpp.obj",
+			"LuaLib_FIntPoint.cpp.obj",
+			"LuaLib_FIntVector.cpp.obj",
+			"LuaLib_FLinearColor.cpp.obj",
+			"LuaLib_FQuat.cpp.obj",
+			"LuaLib_FRotator.cpp.obj",
+			"LuaLib_FTransform.cpp.obj",
+			"LuaLib_FVector.cpp.obj",
+			"LuaLib_FVector2.cpp.obj",
+			"LuaLib_FVector4.cpp.obj",
+			"ClassDesc.cpp.obj",
+			"FunctionDesc.cpp.obj",
+			"PropertyCreator.cpp.obj",
+			"PropertyDesc.cpp.obj",
+			"ReflectionRegistry.cpp.obj",
+			"UnLuaPerformanceTestProxy.cpp.obj",
+			"UnLua.cpp.obj",
+			"UnLuaBase.cpp.obj",
+			"UnLuaDebugBase.cpp.obj",
+			"UnLuaDelegates.cpp.obj",
+			"UnLuaManager.cpp.obj",
+			"UnLuaModule.cpp.obj"
+		],
+		"Module.UnLua.gen.cpp.obj": [
+			"PropertyCreator.gen.cpp.obj",
+			"UnLua.init.gen.cpp.obj",
+			"UnLuaInterface.gen.cpp.obj",
+			"UnLuaManager.gen.cpp.obj",
+			"UnLuaPerformanceTestProxy.gen.cpp.obj"
+		]
+	}
+}
