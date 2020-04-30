@@ -1,6 +1,7 @@
 require "GameCore.GC"
 require "GamePlay.GP"
 require "GameManage.GM"
+require "GameManage.GW"
 local class = class(GP,"World")
 local var = GC.Core.Var
 function class:ctor()
