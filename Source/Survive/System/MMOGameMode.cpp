@@ -4,10 +4,16 @@
 #include "MMOGameMode.h"
 #include "System/MessageManager.h"
 #include "System/LuaManager.h"
+#include "Unlua.h"
+#include "lua.h"
+#include "pbInterFace.h"
+const char *PBCLIBS_NAME = "protobuf.c";
 void AMMOGameMode::InitGame(const FString& MapName, const FString& Options, FString& ErrorMessage)
 {
 	UE_LOG(LogTemp, Log, TEXT("C++ InitGame"));
 	Super::InitGame(MapName, Options, ErrorMessage);
+	lua_State * L = UnLua::GetState();
+	luaL_requiref(L, PBCLIBS_NAME, luaopen_protobuf_c, 0);
 	sInstance = this;
 	OverrideInitGame();
 }
@@ -26,11 +32,11 @@ void AMMOGameMode::BeginPlay()
 void AMMOGameMode::EndPlay(const EEndPlayReason::Type EndPlayReason)
 {
 	/**
-	 * ÓÉÓÚÊ±ĞòÎÊÌâ£¬Èç¹ûÔÚÕâÀïÇåÀílua£¬ÓĞ¿ÉÄÜPlayerControllerÒÑ¾­±»ÊÍ·Å
-	 * »áµ¼ÖÂluaÇåÀíÊ±µÄÒ°Ö¸ÕëÎÊÌâ
-	 * ËùÒÔÏÖÔÚluaÇåÀí·ÅÔÚÁ½¸ö»Øµ÷ÀïÍê³É
+	 * ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½â£¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½luaï¿½ï¿½ï¿½Ğ¿ï¿½ï¿½ï¿½PlayerControllerï¿½Ñ¾ï¿½ï¿½ï¿½ï¿½Í·ï¿½
+	 * ï¿½áµ¼ï¿½ï¿½luaï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½Ò°Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	 * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½luaï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Øµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	 */
-	 //ÇåÀíLua
+	 //ï¿½ï¿½ï¿½ï¿½Lua
 	UE_LOG(LogTemp, Log, TEXT("C++ EndPlay"));
 	Super::EndPlay(EndPlayReason);
 }

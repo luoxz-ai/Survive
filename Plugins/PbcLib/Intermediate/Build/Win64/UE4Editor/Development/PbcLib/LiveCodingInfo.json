@@ -1,0 +1,22 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.PbcLib.cpp.obj": [
+			"alloc.cpp.obj",
+			"arrayPB.cpp.obj",
+			"bootstrap.cpp.obj",
+			"context.cpp.obj",
+			"decode.cpp.obj",
+			"mapPB.cpp.obj",
+			"pattern.cpp.obj",
+			"PbcLib.cpp.obj",
+			"pbInterFace.cpp.obj",
+			"proto.cpp.obj",
+			"register.cpp.obj",
+			"rmessage.cpp.obj",
+			"stringpool.cpp.obj",
+			"varint.cpp.obj",
+			"wmessage.cpp.obj"
+		]
+	}
+}

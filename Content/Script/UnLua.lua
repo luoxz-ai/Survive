@@ -1,4 +1,3 @@
-require "World"
 local rawget = rawget
 local rawset = rawset
 local type = type
@@ -65,7 +64,21 @@ local function global_index(t, k)
 	end
 	return rawget(t, k)
 end
-
+local function Class(module , class_name , super_name)
+	local super_class = nil
+	if super_name ~= nil then
+		super_class = require(super_name)
+	end
+	local new_class = {}
+	new_class.__index = Index
+	new_class.__newindex = NewIndex
+	new_class.super = super_class
+	new_class.__cname = class_name
+	if module ~= nil then
+        module[class_name] = new_class
+    end
+    return new_class
+end
 if WITH_UE4_NAMESPACE then
 	print("WITH_UE4_NAMESPACE==true");
 else
@@ -77,6 +90,7 @@ else
 	print("WITH_UE4_NAMESPACE==false");
 end
 
+_G.Class = Class
 _G.print = print
 _G.Index = Index
 _G.NewIndex = NewIndex

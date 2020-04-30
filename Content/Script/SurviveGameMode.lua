@@ -1,7 +1,7 @@
 --lua class : SurviveGameMode
 require "UnLua"
 print("lua class : SurviveGameMode")
-local class = class("SurviveGameMode")
+local class = Class(_G,"SurviveGameMode")
 
 function class:Initialize(Initializer)
 
@@ -12,6 +12,7 @@ function class:UserConstructionScript()
 end
 function class:OverrideInitGame()
     print("OverrideInitGame==*******************=")
+    require "World"
     --创建各种message
     gworld = GP.World.new()
 end

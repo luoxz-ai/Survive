@@ -1,0 +1,29 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0",
+	"FriendlyName": "PbcLib",
+	"Description": "A protocol buffers library for C by Cloud.Wu",
+	"Category": "Other",
+	"CreatedBy": "Zhaoyu.Wang",
+	"CreatedByURL": "https://github.com/cloudwu/pbc",
+	"DocsURL": "https://github.com/cloudwu/pbc",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"CanContainContent": true,
+	"IsBetaVersion": false,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "PbcLib",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "UnLua",
+			"Enabled": true
+		},
+	]	
+}
