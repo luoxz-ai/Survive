@@ -16,9 +16,10 @@ public class Survive : ModuleRules
 		PublicDefinitions.Add("ASIO_NO_TYPEID");
 		PublicDefinitions.Add("ASIO_NO_EXCEPTIONS");
 		PrivateIncludePaths.Add("../ThirdParty/Asio/include/");
+		PrivateIncludePaths.Add("../ThirdParty/Lua/include/");
 		// Uncomment if you are using Slate UI
 		// PrivateDependencyModuleNames.AddRange(new string[] { "Slate", "SlateCore" });
-		
+
 		// Uncomment if you are using online features
 		// PrivateDependencyModuleNames.Add("OnlineSubsystem");
 
