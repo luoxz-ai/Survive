@@ -1,4 +1,4 @@
 
-GP.Bp = {}
+GA.GamePlay.Bp = {}
 
 require "GamePlay.Bp.BpClass"

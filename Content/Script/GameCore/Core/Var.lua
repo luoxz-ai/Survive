@@ -1,4 +1,4 @@
-local class = class(GC.Core,"Var")
+local class = class(GA.GameCore.Core,"Var")
 
 function class:ctor(var)
     self.var = var

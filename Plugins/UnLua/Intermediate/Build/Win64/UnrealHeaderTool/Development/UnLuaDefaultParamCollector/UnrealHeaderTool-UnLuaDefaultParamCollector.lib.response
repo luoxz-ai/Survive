@@ -6,8 +6,8 @@
 /NAME:"UnrealHeaderTool-UnLuaDefaultParamCollector.dll"
 /IGNORE:4221
 /NODEFAULTLIB
-"D:\ouczbs\Survive\Intermediate\Build\Win64\UnrealHeaderTool\Development\CoreUObject\SharedPCH.CoreUObject.ShadowErrors.h.obj"
-"D:\ouczbs\Survive\Plugins\UnLua\Intermediate\Build\Win64\UnrealHeaderTool\Development\UnLuaDefaultParamCollector\UnLuaDefaultParamCollector.cpp.obj"
-"D:\ouczbs\Survive\Plugins\UnLua\Intermediate\Build\Win64\UnrealHeaderTool\Development\UnLuaDefaultParamCollector\Default.rc2.res"
-/OUT:"D:\ouczbs\Survive\Plugins\UnLua\Intermediate\Build\Win64\UnrealHeaderTool\Development\UnLuaDefaultParamCollector\UnrealHeaderTool-UnLuaDefaultParamCollector.lib"
+"E:\ouczbs\Survive\Intermediate\Build\Win64\UnrealHeaderTool\Development\CoreUObject\SharedPCH.CoreUObject.ShadowErrors.h.obj"
+"E:\ouczbs\Survive\Plugins\UnLua\Intermediate\Build\Win64\UnrealHeaderTool\Development\UnLuaDefaultParamCollector\UnLuaDefaultParamCollector.cpp.obj"
+"E:\ouczbs\Survive\Plugins\UnLua\Intermediate\Build\Win64\UnrealHeaderTool\Development\UnLuaDefaultParamCollector\Default.rc2.res"
+/OUT:"E:\ouczbs\Survive\Plugins\UnLua\Intermediate\Build\Win64\UnrealHeaderTool\Development\UnLuaDefaultParamCollector\UnrealHeaderTool-UnLuaDefaultParamCollector.lib"
 /INCLUDE:IMPLEMENT_MODULE_UnLuaDefaultParamCollector

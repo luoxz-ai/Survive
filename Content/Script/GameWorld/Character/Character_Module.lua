@@ -1,6 +1,6 @@
 
-GP.Character = {}
-require "GamePlay.Character.BaseCharacter"
-require "GamePlay.Character.CharacterAnim"
-require "GamePlay.Character.CharacterAnimIK"
-require "GamePlay.Character.PlayCharacter"
+GA.GameWorld.Character = {}
+require "GameWorld.Character.BaseCharacter"
+require "GameWorld.Character.CharacterAnim"
+require "GameWorld.Character.CharacterAnimIK"
+require "GameWorld.Character.PlayCharacter"

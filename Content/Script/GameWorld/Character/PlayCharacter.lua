@@ -1,7 +1,7 @@
 require "UnLua"
 print("GameWorld.Character.PlayCharacter")
 local super = require "GameWorld.Character.BaseCharacter"
-local class = Class(GP.Character ,"PlayCharacter", super)
+local class = Class(GA.GameWorld.Character ,"PlayCharacter", super)
 
 function class:Initialize(Initializer)
     self.super.Initialize(self)

@@ -1,14 +1,15 @@
+GA = {}
 require "GameCore.GC"
 require "GamePlay.GP"
 require "GameManage.GM"
-require "GameManage.GW"
-local class = class(GP,"World")
-local var = GC.Core.Var
+require "GameWorld.GW"
+local class = class(GA,"World")
+local var = GA.GameCore.Core.Var
 function class:ctor()
     
     self.world = nil
     self.GameWorld = nil
-    self.message_beginPlay = GC.Core.Message.new()
+    self.message_beginPlay = GA.GameCore.Core.Message.new()
 end
 
 function class:setWorld(world)
@@ -19,15 +20,15 @@ function class:setGameWorld(GameWorld)
 end
 function class:beginPlay()
     --local zero = UE4.FVector(0.0, 0.0, 0.0)
-    --self.inputManage = GP.Manage.InputManage.new()
+    --self.inputManage = GA.GamePlay.Manage.InputManage.new()
 
     -- local playerControl = UE4.UGameplayStatics.GetPlayerController(self.world, 0)
-    -- self.playerNet = GP.Player.PlayerNet.new(playerControl)
+    -- self.playerNet = GA.GamePlay.Player.PlayerNet.new(playerControl)
     -- self.message_beginPlay:send()
 end
 
 function class:initializeWorld()
-    -- self.eventBus               = GC.Core.EventBus.new()
+    -- self.eventBus               = GA.GameCore.Core.EventBus.new()
     -- self.StateManager           = GA.Core.StateManager.new()
     -- self.scheduler              = GA.Core.Scheduler.new()
     -- self.UserInput              = GA.Input.UserInput.new()

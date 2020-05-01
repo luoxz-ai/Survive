@@ -1,8 +1,8 @@
 
-local class = class(GC.Entity, "EntityEventHandle")
+local class = class(GA.GameCore.Entity, "EntityEventHandle")
 
-local value = GC.Core.Value
-local message = GC.Core.Message
+local value = GA.GameCore.Core.Value
+local message = GA.GameCore.Core.Message
 function class:ctor()
     self.health = value.new(100)
     self.isGrounded = value.new(true)

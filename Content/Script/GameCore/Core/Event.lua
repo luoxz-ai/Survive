@@ -1,4 +1,4 @@
-local class = class(GC.Core,"Event")
+local class = class(GA.GameCore.Core,"Event")
 
 function class:ctor()
     self.events = {}

@@ -1,6 +1,6 @@
 
-local class = class(GC.Math, "Vector2")
-local value = GC.Core.Value
+local class = class(GA.GameCore.Math, "Vector2")
+local value = GA.GameCore.Core.Value
 function class:ctor(X ,Y)
     self.X = X or 0.0
     self.Y = Y or 0.0

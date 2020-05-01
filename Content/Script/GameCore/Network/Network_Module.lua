@@ -1,3 +1,3 @@
 
 
-GC.Network = {}
+GA.GameCore.Network = {}

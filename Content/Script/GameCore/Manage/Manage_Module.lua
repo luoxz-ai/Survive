@@ -1,4 +1,4 @@
 
-GC.Manage = {}
+GA.GameCore.Manage = {}
 
 require "GameCore.Manage.BaseManage"

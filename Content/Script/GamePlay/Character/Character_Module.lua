@@ -1,2 +1,2 @@
 
-GP.Character = {}
+GA.GamePlay.Character = {}

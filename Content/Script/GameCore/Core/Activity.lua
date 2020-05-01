@@ -1,11 +1,11 @@
-local class = class(GC.Core,"Activity")
+local class = class(GA.GameCore.Core,"Activity")
 
 function class:ctor(initialActive)
     self.active = initialActive or false
-    self.startTryers = GC.Core.Condition.new()
-    self.stopTryers = GC.Core.Condition.new()
-    self.onStop = GC.Core.Event.new()
-    self.onStart = GC.Core.Event.new()
+    self.startTryers = GA.GameCore.Core.Condition.new()
+    self.stopTryers = GA.GameCore.Core.Condition.new()
+    self.onStop = GA.GameCore.Core.Event.new()
+    self.onStart = GA.GameCore.Core.Event.new()
 end
 
 function class:addStartSC(obj, tryer)

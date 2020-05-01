@@ -1,6 +1,6 @@
 
 
-local class = class(GC.Manage,"BaseManage")
+local class = class(GA.GameCore.Manage,"BaseManage")
 
 function class:ctor()
     

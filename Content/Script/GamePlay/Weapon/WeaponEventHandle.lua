@@ -1,8 +1,8 @@
 
 
-local class = class(GP.Player, "WeaponEventHandle")
+local class = class(GA.GamePlay.Player, "WeaponEventHandle")
 
 function class:ctor()
-    self.fire = GC.Core.Activity.new(false)
+    self.fire = GA.GameCore.Core.Activity.new(false)
     
 end

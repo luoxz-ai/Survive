@@ -1,8 +1,8 @@
-local class = class(GC.Core,"Condition")
+local class = class(GA.GameCore.Core,"Condition")
 
 function class:ctor()
-    self.sufficient = GC.Core.Event.new()
-    self.necessary = GC.Core.Event.new()
+    self.sufficient = GA.GameCore.Core.Event.new()
+    self.necessary = GA.GameCore.Core.Event.new()
 end
 function class:clear()
     self.sufficient:clear()

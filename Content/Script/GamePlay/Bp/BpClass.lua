@@ -5,5 +5,5 @@ local class = {
 for k,v in pairs(class) do 
     class[k] = UE4.UClass.Load(v)
 end
-GP.Bp.BpClass = class
+GA.GamePlay.Bp.BpClass = class
 return class

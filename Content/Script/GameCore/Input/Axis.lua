@@ -1,5 +1,5 @@
 
-local class = class(GC.Input, "Axis")
+local class = class(GA.GameCore.Input, "Axis")
 function class:ctor()
     self.value = 0
     self.callbacks = {}

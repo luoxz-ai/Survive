@@ -64,11 +64,7 @@ local function global_index(t, k)
 	end
 	return rawget(t, k)
 end
-local function Class(module , class_name , super_name)
-	local super_class = nil
-	if super_name ~= nil then
-		super_class = require(super_name)
-	end
+local function Class(module , class_name , super_class)
 	local new_class = {}
 	new_class.__index = Index
 	new_class.__newindex = NewIndex

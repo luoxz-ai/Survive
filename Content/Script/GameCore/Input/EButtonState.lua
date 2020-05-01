@@ -4,6 +4,6 @@ local class = {
     Released = 2
 }
 
-GC.Input.EButtonState = class
+GA.GameCore.Input.EButtonState = class
 
 return class

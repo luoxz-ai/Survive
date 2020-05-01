@@ -1,6 +1,6 @@
 
 
-GC.Core = {}
+GA.GameCore.Core = {}
 
 require "GameCore.Core.Functions"
 require "GameCore.Core.Event"

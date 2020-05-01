@@ -6,9 +6,9 @@
 /NAME:"UE4Editor-UnLua.dll"
 /IGNORE:4221
 /NODEFAULTLIB
-"D:\ouczbs\Survive\Intermediate\Build\Win64\SurviveEditor\Development\UnrealEd\SharedPCH.UnrealEd.h.obj"
-"D:\ouczbs\Survive\Plugins\UnLua\Intermediate\Build\Win64\UE4Editor\Development\UnLua\Module.UnLua.cpp.obj"
-"D:\ouczbs\Survive\Plugins\UnLua\Intermediate\Build\Win64\UE4Editor\Development\UnLua\Module.UnLua.gen.cpp.obj"
-"D:\ouczbs\Survive\Plugins\UnLua\Intermediate\Build\Win64\UE4Editor\Development\UnLua\Default.rc2.res"
-/OUT:"D:\ouczbs\Survive\Plugins\UnLua\Intermediate\Build\Win64\UE4Editor\Development\UnLua\UE4Editor-UnLua.lib"
+"E:\ouczbs\Survive\Intermediate\Build\Win64\SurviveEditor\Development\UnrealEd\SharedPCH.UnrealEd.h.obj"
+"E:\ouczbs\Survive\Plugins\UnLua\Intermediate\Build\Win64\UE4Editor\Development\UnLua\Module.UnLua.cpp.obj"
+"E:\ouczbs\Survive\Plugins\UnLua\Intermediate\Build\Win64\UE4Editor\Development\UnLua\Module.UnLua.gen.cpp.obj"
+"E:\ouczbs\Survive\Plugins\UnLua\Intermediate\Build\Win64\UE4Editor\Development\UnLua\Default.rc2.res"
+/OUT:"E:\ouczbs\Survive\Plugins\UnLua\Intermediate\Build\Win64\UE4Editor\Development\UnLua\UE4Editor-UnLua.lib"
 /INCLUDE:IMPLEMENT_MODULE_UnLua

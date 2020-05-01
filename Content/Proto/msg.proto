@@ -1,0 +1,43 @@
+syntax="proto3";                //ProtoЭ��
+package pb;                     //��ǰ����
+option csharp_namespace="Pb";   //��C#�ṩ��ѡ��
+
+//ͬ���ͻ������ID
+message SyncPid{
+	int32 Pid=1;
+}
+
+//���λ��
+message Position{
+	float X=1;
+	float Y=2;
+	float Z=3;
+	float V=4;
+}
+
+//��ҹ㲥����
+message BroadCast{
+	int32 Pid=1;
+	int32 Tp=2;              //1-��������  2-���λ�� 3 ���� 4 �ƶ�֮��������Ϣ����
+	oneof Data {
+        string Content=3;    //�������Ϣ
+        Position P=4;        //�㲥�û���λ��
+		int32 ActionData=5;
+        }
+}
+
+//�����������
+message Talk{
+	string Content=1;    //��������
+}
+
+//�����Ϣ
+message Player{
+	int32 Pid=1;
+	Position P=2;
+}
+
+//ͬ�������ʾ����
+message SyncPlayers{
+	repeated Player ps=1;
+}

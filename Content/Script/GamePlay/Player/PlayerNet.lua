@@ -1,12 +1,12 @@
 
-local class = class(GP.Player, "PlayerNet")
+local class = class(GA.GamePlay.Player, "PlayerNet")
 -- begin with b means blueprint
 function class:ctor(control)
     self.b_control = control
     self.b_player = control.Pawn
 
-    self.m_playerInput = GP.Player.PlayerInputHandle.new()
-    self.m_playerEntity =GP.Player.PlayerEntityHandle.new()
+    self.m_playerInput = GA.GamePlay.Player.PlayerInputHandle.new()
+    self.m_playerEntity =GA.GamePlay.Player.PlayerEntityHandle.new()
 
     self.b_anim = self.b_player.Mesh:GetAnimInstance()
 

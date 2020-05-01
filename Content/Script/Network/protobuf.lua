@@ -17,18 +17,18 @@ local M = {}
 
 local _pattern_cache = {}
 
-local P,GC
+local P,GA.GameCore
 
 P = debug.getregistry().PROTOBUF_ENV
 
 if P then
-	GC = c._gc()
+	GA.GameCore = c._gc()
 else
 	P= c._env_new()
-	GC = c._gc(P)
+	GA.GameCore = c._gc(P)
 end
 
-M.GC = GC
+M.GA.GameCore = GA.GameCore
 
 function M.lasterror()
 	return c._last_error(P)
@@ -202,7 +202,7 @@ local function decode_message( message , buffer, length)
 			_CObj = rmessage,
 			_CType = message,
 		}
-		c._add_rmessage(GC,rmessage)
+		c._add_rmessage(GA.GameCore,rmessage)
 		return setmetatable( self , _R_meta )
 	end
 end
@@ -379,7 +379,7 @@ local function _pattern_create(pattern)
 	if cobj == nil then
 		return
 	end
-	c._add_pattern(GC, cobj)
+	c._add_pattern(GA.GameCore, cobj)
 	local pat = {
 		CObj = cobj,
 		format = table.concat(lua),

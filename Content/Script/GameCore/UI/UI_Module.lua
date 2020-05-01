@@ -1,3 +1,3 @@
 
 
-GC.UI = {}
+GA.GameCore.UI = {}

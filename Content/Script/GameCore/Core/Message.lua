@@ -1,8 +1,8 @@
 
-local class = class(GC.Core,"Message")
+local class = class(GA.GameCore.Core,"Message")
 
 function class:ctor()
-    self.listens = GC.Core.Event.new()
+    self.listens = GA.GameCore.Core.Event.new()
     self.active = false
 end
 

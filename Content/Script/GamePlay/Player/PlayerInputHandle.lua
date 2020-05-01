@@ -1,4 +1,4 @@
-local class = class(GP.Player, "PlayerInputHandle")
+local class = class(GA.GamePlay.Player, "PlayerInputHandle")
 
 function class:ctor()
     self.RightAxisValue = 0
@@ -6,14 +6,14 @@ function class:ctor()
     self.LookUp = 0
     self.LookRight = 0
 
-    self.fire = GC.Core.Activity.new(false)
+    self.fire = GA.GameCore.Core.Activity.new(false)
     self.LookRightRate = 150
     self.LookUpRate = 150
 
-    self.moveStop = GC.Core.Activity.new(false)
-    self.CrouchAction = GC.Core.Activity.new(false)
-    self.JumpAction = GC.Core.Activity.new(false)
-    self.SprintAction = GC.Core.Activity.new(false)
+    self.moveStop = GA.GameCore.Core.Activity.new(false)
+    self.CrouchAction = GA.GameCore.Core.Activity.new(false)
+    self.JumpAction = GA.GameCore.Core.Activity.new(false)
+    self.SprintAction = GA.GameCore.Core.Activity.new(false)
 end
 
 function class:tick()

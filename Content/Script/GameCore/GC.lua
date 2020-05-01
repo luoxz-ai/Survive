@@ -1,6 +1,6 @@
 -- define_module("CoreBase")
 
-GC = {}
+GA.GameCore = {}
 
 require "GameCore.Core.Core_Module"
 require "GameCore.Network.Network_Module"

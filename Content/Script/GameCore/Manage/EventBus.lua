@@ -1,6 +1,6 @@
 
-local super = GP.Manage.BaseManage
-local class = class(GP, "EventBus", super)
+local super = GA.GamePlay.Manage.BaseManage
+local class = class(GA.GamePlay, "EventBus", super)
 
 function class:ctor()
     super.ctor(self)

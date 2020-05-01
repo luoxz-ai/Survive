@@ -1,10 +1,10 @@
-local class = class(GC.Core,"Value")
+local class = class(GA.GameCore.Core,"Value")
 
 function class:ctor(initialValue)
     self.currentValue = initialValue
     self.lastValue = initialValue
     self.filter = nil
-    self.callbacks = GC.Core.Event.new()
+    self.callbacks = GA.GameCore.Core.Event.new()
 end
 
 function class:set(newValue)

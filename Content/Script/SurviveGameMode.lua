@@ -14,7 +14,7 @@ function class:OverrideInitGame()
     print("OverrideInitGame==*******************=")
     require "World"
     --创建各种message
-    gworld = GP.World.new()
+    gworld = GA.World.new()
 end
 function class:ReceiveBeginPlay()
     print("ReceiveBeginPlay GameMode")

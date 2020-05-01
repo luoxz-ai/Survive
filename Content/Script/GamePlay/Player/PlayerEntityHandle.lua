@@ -1,14 +1,14 @@
 
-local super = GC.Entity.EntityEventHandle
-local class = class(GP.Player, "PlayerEntityHandle", super)
+local super = GA.GameCore.Entity.EntityEventHandle
+local class = class(GA.GamePlay.Player, "PlayerEntityHandle", super)
 
--- local value = GC.Core.Value
--- local message = GC.Core.Message
--- local activity = GC.Core.Activity
+-- local value = GA.GameCore.Core.Value
+-- local message = GA.GameCore.Core.Message
+-- local activity = GA.GameCore.Core.Activity
 function class:ctor()
     super.ctor(self)
-    self.hunger = GC.Core.Value.new(100)
-    self.speed = GC.Core.Value.new(0)
+    self.hunger = GA.GameCore.Core.Value.new(100)
+    self.speed = GA.GameCore.Core.Value.new(0)
     self.RightAxisValue = 0
     self.ForwardAxisValue = 0
 

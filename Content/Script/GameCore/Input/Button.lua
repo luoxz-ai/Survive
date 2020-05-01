@@ -1,14 +1,14 @@
 
-local class = class(GC.Input, "Button")
+local class = class(GA.GameCore.Input, "Button")
 
-local var = GC.Core.Var
+local var = GA.GameCore.Core.Var
 function class:ctor()
-    self.state = GC.Input.EButtonState.Released
+    self.state = GA.GameCore.Input.EButtonState.Released
     self.callbacks = {}
 end
 
 function class:isPressed()
-    return self.state == GC.Input.EButtonState.Pressed
+    return self.state == GA.GameCore.Input.EButtonState.Pressed
 end
 
 function class:addChangeListener(callback)
@@ -30,11 +30,11 @@ function class:set(newvalue)
 end
 
 function class:pressed()
-    self.state = GC.Input.EButtonState.Pressed
+    self.state = GA.GameCore.Input.EButtonState.Pressed
 end
 
 function class:released()
-    self.state = GC.Input.EButtonState.Released
+    self.state = GA.GameCore.Input.EButtonState.Released
 end
 
 function class:get()

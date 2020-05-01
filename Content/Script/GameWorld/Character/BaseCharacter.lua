@@ -1,7 +1,7 @@
 --lua class : test_C
 require "UnLua"
 print("lua class : GameWorld.Character.BaseCharacter")
-local class = Class(GP.Character , "BaseCharacter")
+local class = Class(GA.GameWorld.Character , "BaseCharacter")
 
 function class:beginPlay()
 

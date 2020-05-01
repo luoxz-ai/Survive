@@ -1,5 +1,5 @@
 
-GC.Input = {}
+GA.GameCore.Input = {}
 
 require "GameCore.Input.Axis"
 require "GameCore.Input.Button"

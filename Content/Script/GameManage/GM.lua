@@ -1,2 +1,2 @@
 
-GM = {}
+GA.GameManage= {}

@@ -1,8 +1,8 @@
-local class = class(GC.Core,"Attempt")
+local class = class(GA.GameCore.Core,"Attempt")
 
 function class:ctor()
-    self.tryers = GC.Core.Event.new()
-    self.callbacks = GC.Core.Event.new()
+    self.tryers = GA.GameCore.Core.Event.new()
+    self.callbacks = GA.GameCore.Core.Event.new()
 end
 
 function class:addTryer(obj, tryer)

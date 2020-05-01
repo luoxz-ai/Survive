@@ -2,7 +2,7 @@
 
 require "UnLua"
 print("lua class : GameWorld.Character.CharacterAnim")
-local class = Class(GP.Character ,"CharacterAnim")
+local class = Class(GA.GameWorld.Character ,"CharacterAnim")
 
 function class:tick(dt)
     

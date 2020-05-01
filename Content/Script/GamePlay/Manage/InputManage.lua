@@ -1,6 +1,6 @@
 
-local super = GC.Manage.BaseManage
-local class = class(GP.Manage, "InputManage" , super)
+local super = GA.GameCore.Manage.BaseManage
+local class = class(GA.GamePlay.Manage, "InputManage" , super)
 
 function class:ctor()
     super.ctor(self)
@@ -46,7 +46,7 @@ function class:addButton(name)
     if button then
         return button
     end
-    button = GC.Input.Button.new()
+    button = GA.GameCore.Input.Button.new()
     self.button[name] = button
     return button
 end
@@ -63,7 +63,7 @@ function class:addAxis(name)
     if axis then
         return axis
     end
-    axis = GC.Input.Axis.new()
+    axis = GA.GameCore.Input.Axis.new()
     self.axis[name] = axis
     return axis
 end
