@@ -25,6 +25,7 @@ void AMessageManager::Tick(float DeltaTime)
 void AMessageManager::Disconnect()
 {
 	message->PostDisconnect();
+	OverrideDisconncet();
 }
 
 void AMessageManager::Connect(const FString& Host)
@@ -34,10 +35,8 @@ void AMessageManager::Connect(const FString& Host)
 	message->OnLuaRcvPbcMsg = [this](const std::string& content) {
 		AsyncTask(ENamedThreads::GameThread, [content]() {
 			lua_State * L = UnLua::GetState();
-			/*
 			UE_LOG(LogTemp, Display, TEXT("Test Connect, binary length [%i]."),  content.length());
 			UE_LOG(LogTemp, Display, TEXT("Test Connect, binary stream [%s]."), *FString(content.c_str()));
-			*/
 			if (L) {
 				lua_getglobal(L, "Pbc");
 				lua_getfield(L, -1, "rcv");
@@ -57,4 +56,8 @@ void AMessageManager::Connect(const FString& Host)
 void AMessageManager::SendMessage(const FString& msg) {
 	//UE_LOG(LogTemp, Log, msg);
 	message->SendPbcMessage(TCHAR_TO_UTF8(*msg));
+}
+void AMessageManager::RegisterToGame()
+{
+	AMMOGameMode::GetGameWorld()->AddManager(AMessageManager::StaticClass() , this );
 }

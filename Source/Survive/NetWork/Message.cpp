@@ -1,7 +1,7 @@
 // Copyright 2018-2020 X.D. Network Inc. All Rights Reserved.
 
 #include "Message.h"
-
+#include "System/MessageManager.h"
 using namespace std::placeholders;
 
 Message::Message(const std::string &remote)
@@ -61,7 +61,7 @@ void Message::OnReceiveMessage(std::vector<uint8_t> msg)
         _buffer.insert(_buffer.end(), msg.begin(), msg.end());
     
     auto size = _buffer.size();
-    if (size < 4)  // 至少2个字节吧
+    if (size < 2)  // 至少2个字节吧
         return;
 
 	// debug only
@@ -75,11 +75,11 @@ void Message::OnReceiveMessage(std::vector<uint8_t> msg)
 	while (_buffer.size() > 0)
 	{
 		size = _buffer.size();
-		auto length = *(uint32_t*)(&_buffer[0]);
-		if (size < length + 8)  // 没收到完整协议就等待
+		auto length = *(uint16_t*)(&_buffer[0]);
+		if (size < length + 2)  // 没收到完整协议就等待
 			return;
 
-		std::string pb(_buffer.begin() + 8, _buffer.begin() + length + 8);
+		std::string pb(_buffer.begin() + 4, _buffer.begin() + length + 2);
 		//UE_LOG(LogTemp, Display, TEXT("Recv protobuf, Msg: %s, size[%d], buf[%d]."), *FString(pb.c_str()), msg.size(), _buffer.size());
 		_buffer.erase(_buffer.begin(), _buffer.begin() + length + 2);
 		if (OnLuaRcvPbcMsg) 
@@ -91,12 +91,14 @@ void Message::OnReceiveMessage(std::vector<uint8_t> msg)
 
 void Message::OnServerConnected(std::string remote)
 {
+
 }
 
 void Message::OnServerDisconnected(std::string remote)
 {
-
-
+	if (AMessageManager::CheckValid()) {
+		AMessageManager::I()->Disconnect();
+	}
 }
 
 void Message::setMessageSendEventDelegate(FSendMessageEvent msgDelegate)

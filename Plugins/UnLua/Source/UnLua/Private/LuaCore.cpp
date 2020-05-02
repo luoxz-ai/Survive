@@ -1134,6 +1134,22 @@ static int32 GetField(lua_State *L)
 /**
  * Add a package path to package.path
  */
+ UNLUA_API void AddPackageCPath(lua_State* L, const char* cPath)
+{
+    if (!cPath)
+    {
+        //UE_LOG(LogUnLua, Warning, TEXT("%s, Invalid package cpath!"), ANSI_TO_TCHAR(FUNCTION));
+        return;
+    }
+
+    lua_getglobal(L, "package");
+    lua_getfield(L, -1, "cpath");
+    char FinalPath[MAX_SPRINTF];
+    FCStringAnsi::Sprintf(FinalPath, "%s;%s", lua_tostring(L, -1), cPath);
+    lua_pushstring(L, FinalPath);
+    lua_setfield(L, -3, "cpath");
+    lua_pop(L, 2);
+}
 void AddPackagePath(lua_State *L, const char *Path)
 {
     if (!Path)
@@ -1148,6 +1164,17 @@ void AddPackagePath(lua_State *L, const char *Path)
     FCStringAnsi::Sprintf(FinalPath, "%s;%s", lua_tostring(L, -1), Path);
     lua_pushstring(L, FinalPath);
     lua_setfield(L, -3, "path");
+    #if WITH_EDITOR
+        #if PLATFORM_WINDOWS
+        // add new package cpath
+        FString LuaSrcCPath = GLuaSrcFullPath + TEXT("core.dll");
+        AddPackageCPath(L, TCHAR_TO_UTF8(*LuaSrcCPath));// 这个函数是后来自己加的，对照AddPackagePath重写的,为了能require luasocket
+
+        // Create 'DEBUG' namespace (a Lua table)
+        lua_pushboolean(L, true);
+        lua_setglobal(L, "WITH_LUAIDE_DEBUG");//注册WITH_LUAIDE_DEBUG宏，在lua里用
+        #endif
+    #endif
     lua_pop(L, 2);
 }
 

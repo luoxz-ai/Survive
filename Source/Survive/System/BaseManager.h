@@ -21,4 +21,6 @@ public:
 	virtual void PostInitializeComponents();
 	virtual void EndPlay(const EEndPlayReason::Type EndPlayReason);
 	virtual void BeginPlay() override;
+	UFUNCTION(BlueprintCallable, Category = "C++ API")
+	virtual void RegisterToGame();
 };

@@ -11,7 +11,7 @@
 #include "E:/ouczbs/Survive/Plugins/UnLua/Source/UnLua/Private/CollisionHelper.cpp"
 #include "E:/ouczbs/Survive/Plugins/UnLua/Source/UnLua/Private/DefaultParamCollection.cpp"
 #include "E:/ouczbs/Survive/Plugins/UnLua/Source/UnLua/Private/DelegateHelper.cpp"
-#include "E:/ouczbs/Survive/Plugins/UnLua/Source/UnLua/Private/LuaCore.cpp"
+#include "E:/ouczbs/Survive/Plugins/UnLua/Source/UnLua/Private/LuaContext.cpp"
 #include "E:/ouczbs/Survive/Plugins/UnLua/Source/UnLua/Private/LuaDynamicBinding.cpp"
 #include "E:/ouczbs/Survive/Plugins/UnLua/Source/UnLua/Private/LuaFunctionInjection.cpp"
 #include "E:/ouczbs/Survive/Plugins/UnLua/Source/UnLua/Private/MathLib/LuaLib_FColor.cpp"

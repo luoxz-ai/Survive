@@ -36,4 +36,7 @@ void ABaseManager::BeginPlay()
 	Super::BeginPlay();
 	
 }
+void ABaseManager::RegisterToGame()
+{
 
+}

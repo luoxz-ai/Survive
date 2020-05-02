@@ -14,7 +14,7 @@
 			"CollisionHelper.cpp.obj",
 			"DefaultParamCollection.cpp.obj",
 			"DelegateHelper.cpp.obj",
-			"LuaCore.cpp.obj",
+			"LuaContext.cpp.obj",
 			"LuaDynamicBinding.cpp.obj",
 			"LuaFunctionInjection.cpp.obj",
 			"LuaLib_FColor.cpp.obj",
@@ -39,7 +39,7 @@
 			"UnLuaDelegates.cpp.obj",
 			"UnLuaManager.cpp.obj",
 			"UnLuaModule.cpp.obj",
-			"LuaContext.cpp.obj"
+			"LuaCore.cpp.obj"
 		],
 		"Module.UnLua.gen.cpp.obj": [
 			"PropertyCreator.gen.cpp.obj",

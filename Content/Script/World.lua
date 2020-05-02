@@ -3,6 +3,10 @@ require "GamePlay.GP"
 require "GameManage.GM"
 require "GameWorld.GW"
 require "Network.Network_Module"
+if WITH_LUAIDE_DEBUG then
+    require("socket.core")
+    require("LuaPanda").start("127.0.0.1",8818)
+end
 local class = class(GA,"World")
 local var = GA.GameCore.Core.Var
 Pbc = GA.Network.Pbc
@@ -12,7 +16,9 @@ end
 function class:InitializeWorld(WorldContext)
     self._uWorldContext = WorldContext
     self.MessageManager = self:SpawnActorByLua(GA.GameWorld.Manager.MessageManager, UE4.FVector(0.0, 0.0, 0.0) , UE4.FRotator(0, 0, 0))
-    host = "111.229.54.9:8999"
+    self.MessageManager:init()
+    --host = "111.229.54.9:8999"
+    host = "127.0.0.1:8999"
     self.MessageManager:Connect(host);
     --self.MessageManager:SendMessage("sad");
 end

@@ -45,6 +45,9 @@ public:
 		}
 		return nullptr;
 	}
+	static AMMOGameMode* GetGameWorld() {
+		return sInstance;
+	}
 	UFUNCTION(BlueprintCallable, Category = "C++ API")
 	void AddManager(UClass* Cls , ABaseManager* manager);
 	UFUNCTION(BlueprintCallable, Category = "C++ API")

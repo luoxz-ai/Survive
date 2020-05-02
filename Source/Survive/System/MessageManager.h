@@ -24,6 +24,10 @@ public:
 	void Disconnect();
 	UFUNCTION(BlueprintCallable, Category = "C++ API")
 	void SendMessage(const FString& msg);
+	void RegisterToGame();
+
+	UFUNCTION(BlueprintImplementableEvent, Category = "Override C++")
+	void OverrideDisconncet();
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;

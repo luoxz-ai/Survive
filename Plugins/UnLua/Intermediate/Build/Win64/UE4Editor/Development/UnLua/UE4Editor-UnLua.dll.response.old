@@ -18,7 +18,7 @@
 /DELAYLOAD:"d3d12.dll"
 /DELAYLOAD:"DBGHELP.DLL"
 /DELAYLOAD:"Lua.dll"
-/LIBPATH:"E:\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\lib\x64"
+/LIBPATH:"E:\Microsoft Visual Studio\2019\VC\Tools\MSVC\14.16.27023\lib\x64"
 /LIBPATH:"C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\lib\um\x64"
 /LIBPATH:"E:\Windows Kits\10\lib\10.0.17763.0\ucrt\x64"
 /LIBPATH:"E:\Windows Kits\10\lib\10.0.17763.0\um\x64"
@@ -34,7 +34,6 @@
 /NODEFAULTLIB:"LIBCPD"
 /FUNCTIONPADMIN
 "E:\ouczbs\Survive\Intermediate\Build\Win64\SurviveEditor\Development\UnrealEd\SharedPCH.UnrealEd.h.obj"
-"E:\ouczbs\Survive\Plugins\UnLua\Intermediate\Build\Win64\UE4Editor\Development\UnLua\LuaContext.cpp.obj"
 "E:\ouczbs\Survive\Plugins\UnLua\Intermediate\Build\Win64\UE4Editor\Development\UnLua\Module.UnLua.cpp.obj"
 "E:\ouczbs\Survive\Plugins\UnLua\Intermediate\Build\Win64\UE4Editor\Development\UnLua\Module.UnLua.gen.cpp.obj"
 "E:\ouczbs\Survive\Plugins\UnLua\Intermediate\Build\Win64\UE4Editor\Development\UnLua\Default.rc2.res"

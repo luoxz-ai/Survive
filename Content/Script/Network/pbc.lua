@@ -114,6 +114,7 @@ function class.rcvWrapper(inMsg)
     if not inMsg then logE("rcv nil pbc msg") return end
     local tMsgTable, tError = protobuf.decode(gServerMsgType, inMsg)
     if tError then logE(err) return end
+    print(table.tostring(tMsgTable.cmd))
     if type(tMsgTable.cmd) ~= "number" or tMsgTable.cmd == 0 then
         -- server sends old heart-beat frequently with enumType 0.
         if tMsgTable.cmd ~= 0 then logE("decode msg failed: cannot unwrap packet"..tostring(tMsgTable.cmd)) end return
