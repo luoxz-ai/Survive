@@ -10,7 +10,6 @@ local EProtoId = {
     HeartBeatUserCmd = '8',
     ServerTimeUserCmd = '9',
     GMDeleteCharUserCmd = '10',
-    Test = '200',
     RegErrUserCmd = '201',
     KickUserErrorCmd = '202',
     MaintainUserCmd = '203',

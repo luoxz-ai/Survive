@@ -128,7 +128,7 @@ void FLuaContext::RegisterDelegates()
 }
 
 /**
- * Create Lua state (main thread) and register/create base libs/tables/classes
+ * Create+ Lua state (main thread) and register/create base libs/tables/classes
  */
 void FLuaContext::CreateState()
 {

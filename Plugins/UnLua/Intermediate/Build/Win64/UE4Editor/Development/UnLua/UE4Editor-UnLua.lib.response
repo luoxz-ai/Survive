@@ -7,6 +7,7 @@
 /IGNORE:4221
 /NODEFAULTLIB
 "E:\ouczbs\Survive\Intermediate\Build\Win64\SurviveEditor\Development\UnrealEd\SharedPCH.UnrealEd.h.obj"
+"E:\ouczbs\Survive\Plugins\UnLua\Intermediate\Build\Win64\UE4Editor\Development\UnLua\LuaContext.cpp.obj"
 "E:\ouczbs\Survive\Plugins\UnLua\Intermediate\Build\Win64\UE4Editor\Development\UnLua\Module.UnLua.cpp.obj"
 "E:\ouczbs\Survive\Plugins\UnLua\Intermediate\Build\Win64\UE4Editor\Development\UnLua\Module.UnLua.gen.cpp.obj"
 "E:\ouczbs\Survive\Plugins\UnLua\Intermediate\Build\Win64\UE4Editor\Development\UnLua\Default.rc2.res"

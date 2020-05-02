@@ -11,7 +11,6 @@ local SetUProperty = SetUProperty
 local RegisterClass = RegisterClass
 local RegisterEnum = RegisterEnum
 local print = UEPrint
-print("*****************Unlua******************")
 _NotExist = _NotExist or {}
 local NotExist = _NotExist
 
@@ -85,8 +84,19 @@ else
 
 	print("WITH_UE4_NAMESPACE==false");
 end
-
+local function logE(...)
+	print("error *****")
+	print(...)
+end
+local function import(resource)
+	return UE4.UClass.Load(resource)
+end
+local GA = {}
+_G.GA = GA
+_G.import = import
 _G.Class = Class
 _G.print = print
 _G.Index = Index
 _G.NewIndex = NewIndex
+_G.logE = logE
+print("*****************Unlua******************")

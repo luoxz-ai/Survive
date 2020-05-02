@@ -2,7 +2,9 @@
 require "UnLua"
 print("lua class : GameWorld.Character.BaseCharacter")
 local class = Class(GA.GameWorld.Character , "BaseCharacter")
-
+function class:GetUnluaBind()
+    return GA.BpClass.BP_MessageManager,"GameWorld.Character.BaseCharacter"
+end
 function class:beginPlay()
 
 end

@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "MMOGameModeBase.h"
+#include "MMOGameMode.h"
 
 template<typename T>
 class ISingleton
@@ -11,7 +11,7 @@ public:
 	{
 		static T* sInstance = nullptr;
 		// 防止持有野指针
-		sInstance = AMMOGameModeBase::SeekManagerInstance<T>();
+		sInstance = AMMOGameMode::SeekManagerInstance<T>();
 		return sInstance;
 	}
 

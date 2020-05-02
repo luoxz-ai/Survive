@@ -1,7 +1,7 @@
 local protobuf = require "Network.protobuf"
 local ProtoMap = require "Network.EProtoMap"
 local ProtoId = require "Network.EProtoId"
-local XDAppPBInfo = require "Network.EXDAppPBInfo"
+local XDAppPBInfo = {}
 local c = require ("protobuf.c")
 
 local reverseProtoId = {}
@@ -58,9 +58,10 @@ end
 function class.reg()
     log("reg protobuf")
     -- pbc reg auto-gen
+    class._regFile('msg.pb')
     class._regFile('sceneMap.pb')
     class._regFile('xCmd.pb')
--- pbc reg auto-gen
+	-- pbc reg auto-gen
 end
 
 

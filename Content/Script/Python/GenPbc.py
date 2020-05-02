@@ -80,7 +80,7 @@ def GenAndRegPBC(rootDir):
     registerLuaFile = rootDir +"/Script/Network/Pbc.lua"
     with open(registerLuaFile, 'rb') as f:
         pbcContent = f.read().decode()
-    searchStr = "\t-- pbc reg auto-gen"
+    searchStr = "-- pbc reg auto-gen"
     fIdx = pbcContent.find(searchStr )
     lIdx = pbcContent.rfind(searchStr)
     outAutoGen = ""
@@ -91,7 +91,7 @@ def GenAndRegPBC(rootDir):
         for pb in protoPBs:
             (_,pbName) = os.path.split(pb)
             pbOutList.append("    class._regFile('{0}')".format(pbName))
-        pbOutList.append(searchStr)
+        pbOutList.append("\t" + searchStr)
         outAutoGen = pbcContent[:fIdx] + "\n".join(pbOutList) + pbcContent[lIdx + len(searchStr):]
         with open(registerLuaFile, 'wb') as f:
             f.write(outAutoGen.encode())

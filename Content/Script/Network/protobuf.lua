@@ -1,4 +1,4 @@
-local c = require "protobuf.c"
+local c = require ("protobuf.c")
 
 local setmetatable = setmetatable
 local type = type
@@ -17,18 +17,18 @@ local M = {}
 
 local _pattern_cache = {}
 
-local P,GA.GameCore
+local P,GC
 
 P = debug.getregistry().PROTOBUF_ENV
 
 if P then
-	GA.GameCore = c._gc()
+	GC = c._gc()
 else
 	P= c._env_new()
-	GA.GameCore = c._gc(P)
+	GC = c._gc(P)
 end
 
-M.GA.GameCore = GA.GameCore
+M.GC = GC
 
 function M.lasterror()
 	return c._last_error(P)
@@ -147,7 +147,8 @@ end
 _reader[1] = function(msg) return _reader.int end
 _reader[2] = function(msg) return _reader.real end
 _reader[3] = function(msg) return _reader.bool end
-_reader[4] = function(msg) return _reader.string end
+--_reader[4] = function(msg) return _reader.string end
+_reader[4] = function(msg) return _reader.int end
 _reader[5] = function(msg) return _reader.string end
 _reader[6] = function(msg)
 	local message = _reader.message
@@ -202,7 +203,7 @@ local function decode_message( message , buffer, length)
 			_CObj = rmessage,
 			_CType = message,
 		}
-		c._add_rmessage(GA.GameCore,rmessage)
+		c._add_rmessage(GC,rmessage)
 		return setmetatable( self , _R_meta )
 	end
 end
@@ -269,7 +270,8 @@ end
 _writer[1] = function(msg) return _writer.int end
 _writer[2] = function(msg) return _writer.real end
 _writer[3] = function(msg) return _writer.bool end
-_writer[4] = function(msg) return _writer.string end
+--_writer[4] = function(msg) return _writer.string end
+_writer[4] = function(msg) return _writer.int end
 _writer[5] = function(msg) return _writer.string end
 _writer[6] = function(msg)
 	local message = _writer.message
@@ -379,7 +381,7 @@ local function _pattern_create(pattern)
 	if cobj == nil then
 		return
 	end
-	c._add_pattern(GA.GameCore, cobj)
+	c._add_pattern(GC, cobj)
 	local pat = {
 		CObj = cobj,
 		format = table.concat(lua),
@@ -434,7 +436,7 @@ local function default_table(typename)
 			local ret = default_inst[key]
 			if 'table' ~= type(ret) then
 				return ret
-			end 
+			end
 			ret = setmetatable({}, { __index = ret })
 			rawset(tb, key, ret)
 			return ret
@@ -455,6 +457,8 @@ function M.decode(typename, buffer, length)
 	local ret = {}
 	local ok = c._decode(P, decode_message_cb , ret , typename, buffer, length)
 	if ok then
+		--logE("protobuf table: "..typename..""..table.tostring(ret))
+
 		return setmetatable(ret , default_table(typename))
 	else
 		return false , c._last_error(P)
@@ -493,6 +497,10 @@ local function set_default(typename, tbl)
 		end
 	end
 	return setmetatable(tbl , default_table(typename))
+end
+
+function M.regFile(filename)
+	c._env_regfile(P, filename)
 end
 
 function M.register(buffer)

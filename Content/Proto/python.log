@@ -42,3 +42,39 @@ D:\ouczbs\Survive\Content\Proto>protoc --descriptor_set_out=D:/ouczbs/Survive/Co
 
 pb2pbc.bat D:/ouczbs/Survive/Content//Proto/ D:/ouczbs/Survive/Content//Script/Network/Pb/
 pb2pbc.bat D:/ouczbs/Survive/Content//Proto/ D:/ouczbs/Survive/Content//Script/Network/Pb/
+pb2pbc.bat E:\\ouczbs\\Survive\\Content\\/Proto/ E:\\ouczbs\\Survive\\Content\\/Script/Network/Pb/
+
+E:\ouczbs\Survive\Content\Proto>protoc --descriptor_set_out=E:\\ouczbs\\Survive\\Content\\/Script/Network/Pb/msg.pb msg.proto  
+
+E:\ouczbs\Survive\Content\Proto>protoc --descriptor_set_out=E:\\ouczbs\\Survive\\Content\\/Script/Network/Pb/sceneMap.pb sceneMap.proto  
+
+E:\ouczbs\Survive\Content\Proto>protoc --descriptor_set_out=E:\\ouczbs\\Survive\\Content\\/Script/Network/Pb/xCmd.pb xCmd.proto  
+请按任意键继续. . . 
+
+pb2pbc.bat E:\\ouczbs\\Survive\\Content\\/Proto/ E:\\ouczbs\\Survive\\Content\\/Script/Network/Pb/
+
+E:\ouczbs\Survive\Content\Proto>protoc --descriptor_set_out=E:\\ouczbs\\Survive\\Content\\/Script/Network/Pb/msg.pb msg.proto  
+
+E:\ouczbs\Survive\Content\Proto>protoc --descriptor_set_out=E:\\ouczbs\\Survive\\Content\\/Script/Network/Pb/sceneMap.pb sceneMap.proto  
+
+E:\ouczbs\Survive\Content\Proto>protoc --descriptor_set_out=E:\\ouczbs\\Survive\\Content\\/Script/Network/Pb/xCmd.pb xCmd.proto  
+请按任意键继续. . . 
+
+pb2pbc.bat E:\\ouczbs\\Survive\\Content\\/Proto/ E:\\ouczbs\\Survive\\Content\\/Script/Network/Pb/
+
+E:\ouczbs\Survive\Content\Proto>protoc --descriptor_set_out=E:\\ouczbs\\Survive\\Content\\/Script/Network/Pb/msg.pb msg.proto  
+
+E:\ouczbs\Survive\Content\Proto>protoc --descriptor_set_out=E:\\ouczbs\\Survive\\Content\\/Script/Network/Pb/sceneMap.pb sceneMap.proto  
+
+E:\ouczbs\Survive\Content\Proto>protoc --descriptor_set_out=E:\\ouczbs\\Survive\\Content\\/Script/Network/Pb/xCmd.pb xCmd.proto  
+请按任意键继续. . . 
+
+pb2pbc.bat E:\\ouczbs\\Survive\\Content\\/Proto/ E:\\ouczbs\\Survive\\Content\\/Script/Network/Pb/
+
+E:\ouczbs\Survive\Content\Proto>protoc --descriptor_set_out=E:\\ouczbs\\Survive\\Content\\/Script/Network/Pb/msg.pb msg.proto  
+
+E:\ouczbs\Survive\Content\Proto>protoc --descriptor_set_out=E:\\ouczbs\\Survive\\Content\\/Script/Network/Pb/sceneMap.pb sceneMap.proto  
+
+E:\ouczbs\Survive\Content\Proto>protoc --descriptor_set_out=E:\\ouczbs\\Survive\\Content\\/Script/Network/Pb/xCmd.pb xCmd.proto  
+请按任意键继续. . . 
+

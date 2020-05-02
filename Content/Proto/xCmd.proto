@@ -17,7 +17,6 @@ enum CommandList
   CMD_GMDeleteCharUserCmd = 10; // 暂时未用
   
   CMD_LOGIN_USER_END = 199; // 不要使用，作为标志用
-  CMD_Test = 200 
   // ERROR_USER_PROTOCMD
   // 200~399
   CMD_ERROR_USER_START = 200; // 不要使用，作为标志用

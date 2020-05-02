@@ -2,7 +2,9 @@ require "UnLua"
 print("GameWorld.Character.PlayCharacter")
 local super = require "GameWorld.Character.BaseCharacter"
 local class = Class(GA.GameWorld.Character ,"PlayCharacter", super)
-
+function class:GetUnluaBind()
+    return GA.BpClass.BP_MessageManager,"GameWorld.Character.PlayCharacter"
+end
 function class:Initialize(Initializer)
     self.super.Initialize(self)
     print("Initializer PlayCharacter")

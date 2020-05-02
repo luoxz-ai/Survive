@@ -3,6 +3,9 @@
 require "UnLua"
 print("lua class : GameWorld.Character.CharacterControl")
 local class = Class(GA.GameWorld.Character ,"CharacterControl")
+function class:GetUnluaBind()
+    return GA.BpClass.BP_MessageManager,"GameWorld.Character.CharacterControl"
+end
 function class:ReceiveBeginPlay()
     gworld.message_beginPlay:addListener(self , "beginPlay")
 end

@@ -3,7 +3,9 @@
 require "UnLua"
 print("lua class : GameWorld.Character.CharacterAnim")
 local class = Class(GA.GameWorld.Character ,"CharacterAnim")
-
+function class:GetUnluaBind()
+    return GA.BpClass.BP_MessageManager,"GameWorld.Character.CharacterAnim"
+end
 function class:tick(dt)
     
 end

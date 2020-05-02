@@ -4,9 +4,8 @@
 #include "MMOGameMode.h"
 #include "System/MessageManager.h"
 #include "System/LuaManager.h"
-#include "Unlua.h"
-#include "lua.h"
 #include "pbInterFace.h"
+#include "LuaWrapper/CppBindingLibs.h"
 const char *PBCLIBS_NAME = "protobuf.c";
 void AMMOGameMode::InitGame(const FString& MapName, const FString& Options, FString& ErrorMessage)
 {
@@ -14,6 +13,7 @@ void AMMOGameMode::InitGame(const FString& MapName, const FString& Options, FStr
 	Super::InitGame(MapName, Options, ErrorMessage);
 	lua_State * L = UnLua::GetState();
 	luaL_requiref(L, PBCLIBS_NAME, luaopen_protobuf_c, 0);
+	lua_register(L, "proto_send", proto::_send);
 	sInstance = this;
 	OverrideInitGame();
 }
@@ -31,12 +31,6 @@ void AMMOGameMode::BeginPlay()
 
 void AMMOGameMode::EndPlay(const EEndPlayReason::Type EndPlayReason)
 {
-	/**
-	 * ����ʱ�����⣬�������������lua���п���PlayerController�Ѿ����ͷ�
-	 * �ᵼ��lua����ʱ��Ұָ������
-	 * ��������lua�������������ص������
-	 */
-	 //����Lua
 	UE_LOG(LogTemp, Log, TEXT("C++ EndPlay"));
 	Super::EndPlay(EndPlayReason);
 }

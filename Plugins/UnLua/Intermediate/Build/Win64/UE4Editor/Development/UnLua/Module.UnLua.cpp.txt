@@ -295,22 +295,8 @@ e:\ouczbs\survive\plugins\unlua\source\unlua\private\DefaultParamCollection.h
 E:\ouczbs\Survive\Plugins\UnLua\Intermediate\Build\Win64\UE4Editor\Inc\UnLua\DefaultParamCollection.inl
 E:/ouczbs/Survive/Plugins/UnLua/Source/UnLua/Private/DelegateHelper.cpp
 e:\ouczbs\survive\plugins\unlua\source\unlua\private\LuaFunctionInjection.h
-E:/ouczbs/Survive/Plugins/UnLua/Source/UnLua/Private/LuaContext.cpp
-E:\ouczbs\Survive\Plugins\UnLua\Source\UnLua\Public\UnLuaInterface.h
-E:\ouczbs\Survive\Plugins\UnLua\Intermediate\Build\Win64\UE4Editor\Inc\UnLua\UnLuaInterface.generated.h
-E:\ouczbs\Survive\Plugins\UnLua\Source\UnLua\Public\UnLuaDelegates.h
-E:\ouczbs\Survive\Plugins\UnLua\Source\UnLua\Public\UnLuaDebugBase.h
-E:\ouczbs\Survive\Plugins\UnLua\Source\ThirdParty\Lua\include\lua.hpp
-D:\Epic Games\UE_4.24\Engine\Source\Runtime\Projects\Public\Interfaces/IPluginManager.h
-D:\Epic Games\UE_4.24\Engine\Source\Runtime\Projects\Public\PluginDescriptor.h
-d:\epic games\ue_4.24\engine\source\runtime\projects\public\ModuleDescriptor.h
-D:\Epic Games\UE_4.24\Engine\Source\Runtime\Json\Public\Serialization/JsonWriter.h
-D:\Epic Games\UE_4.24\Engine\Source\Runtime\Json\Public\Serialization/JsonTypes.h
-d:\epic games\ue_4.24\engine\source\runtime\projects\public\CustomBuildSteps.h
-d:\epic games\ue_4.24\engine\source\runtime\projects\public\LocalizationDescriptor.h
-d:\epic games\ue_4.24\engine\source\runtime\projects\public\PluginReferenceDescriptor.h
-D:\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Public\GameDelegates.h
 E:/ouczbs/Survive/Plugins/UnLua/Source/UnLua/Private/LuaCore.cpp
+E:\ouczbs\Survive\Plugins\UnLua\Source\UnLua\Public\UnLuaDelegates.h
 e:\ouczbs\survive\plugins\unlua\source\unlua\private\ReflectionUtils/FieldDesc.h
 E:\ouczbs\Survive\Plugins\UnLua\Source\ThirdParty\Lua\include\lfunc.h
 e:\ouczbs\survive\plugins\unlua\source\thirdparty\lua\include\lobject.h
@@ -342,10 +328,14 @@ E:/ouczbs/Survive/Plugins/UnLua/Source/UnLua/Private/ReflectionUtils/PropertyDes
 E:/ouczbs/Survive/Plugins/UnLua/Source/UnLua/Private/ReflectionUtils/ReflectionRegistry.cpp
 E:/ouczbs/Survive/Plugins/UnLua/Source/UnLua/Private/Tests/UnLuaPerformanceTestProxy.cpp
 e:\ouczbs\survive\plugins\unlua\source\unlua\private\tests\UnLuaPerformanceTestProxy.h
+E:\ouczbs\Survive\Plugins\UnLua\Source\UnLua\Public\UnLuaInterface.h
+E:\ouczbs\Survive\Plugins\UnLua\Intermediate\Build\Win64\UE4Editor\Inc\UnLua\UnLuaInterface.generated.h
 E:\ouczbs\Survive\Plugins\UnLua\Intermediate\Build\Win64\UE4Editor\Inc\UnLua\UnLuaPerformanceTestProxy.generated.h
 E:/ouczbs/Survive/Plugins/UnLua/Source/UnLua/Private/UnLua.cpp
 E:/ouczbs/Survive/Plugins/UnLua/Source/UnLua/Private/UnLuaBase.cpp
 E:/ouczbs/Survive/Plugins/UnLua/Source/UnLua/Private/UnLuaDebugBase.cpp
+E:\ouczbs\Survive\Plugins\UnLua\Source\UnLua\Public\UnLuaDebugBase.h
+E:\ouczbs\Survive\Plugins\UnLua\Source\ThirdParty\Lua\include\lua.hpp
 E:/ouczbs/Survive/Plugins/UnLua/Source/UnLua/Private/UnLuaDelegates.cpp
 E:/ouczbs/Survive/Plugins/UnLua/Source/UnLua/Private/UnLuaManager.cpp
 D:\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Classes\GameFramework/InputSettings.h

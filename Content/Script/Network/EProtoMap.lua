@@ -10,7 +10,6 @@ local EProtoMap = {
     HeartBeatUserCmd = 'Cmd.HeartBeatUserCmd',
     ServerTimeUserCmd = 'Cmd.ServerTimeUserCmd',
     GMDeleteCharUserCmd = 'Cmd.GMDeleteCharUserCmd',
-    Test = 'Cmd.Test',
     RegErrUserCmd = 'Cmd.RegErrUserCmd',
     KickUserErrorCmd = 'Cmd.KickUserErrorCmd',
     MaintainUserCmd = 'Cmd.MaintainUserCmd',
