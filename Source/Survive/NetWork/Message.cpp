@@ -35,10 +35,10 @@ void Message::SendPbcMessage(const std::string & buffer)
 
 	// 协议格式
 	// --------------------------------------------
-	// |Length(2)|ProtoNum(2)|Payload(Length - 2)|
+	// |Length(2)|ProtoNum(2)|Payload(Length)|
 	// --------------------------------------------
 	uint32_t header = 0;
-	*(uint16_t*)&header = buffer.size() + 2;
+	*(uint16_t*)&header = buffer.size();
 	*((uint16_t*)&header + 1) = (uint16_t)0x0;
 
 	_socket->send(&header, 4);
@@ -53,7 +53,7 @@ void Message::OnReceiveMessage(std::vector<uint8_t> msg)
 {
     // 协议格式
     // --------------------------------------------
-    // |Length(2)|ProtoNum(2)|Payload(Length - 2)|
+    // |Length(2)|ProtoNum(2)|Payload(Length)|
     // --------------------------------------------
     if (_buffer.empty())
         _buffer = std::move(msg);
@@ -61,7 +61,7 @@ void Message::OnReceiveMessage(std::vector<uint8_t> msg)
         _buffer.insert(_buffer.end(), msg.begin(), msg.end());
     
     auto size = _buffer.size();
-    if (size < 2)  // 至少2个字节吧
+    if (size < 4)  // 至少4个字节吧
         return;
 
 	// debug only
@@ -76,10 +76,10 @@ void Message::OnReceiveMessage(std::vector<uint8_t> msg)
 	{
 		size = _buffer.size();
 		auto length = *(uint16_t*)(&_buffer[0]);
-		if (size < length + 2)  // 没收到完整协议就等待
+		if (size < length + 4)  // 没收到完整协议就等待
 			return;
 
-		std::string pb(_buffer.begin() + 4, _buffer.begin() + length + 2);
+		std::string pb(_buffer.begin() + 4, _buffer.begin() + length + 4);
 		//UE_LOG(LogTemp, Display, TEXT("Recv protobuf, Msg: %s, size[%d], buf[%d]."), *FString(pb.c_str()), msg.size(), _buffer.size());
 		_buffer.erase(_buffer.begin(), _buffer.begin() + length + 2);
 		if (OnLuaRcvPbcMsg) 

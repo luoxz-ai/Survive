@@ -22,8 +22,7 @@ public:
 
 	UFUNCTION(BlueprintCallable, Category = "C++ API")
 	void Disconnect();
-	UFUNCTION(BlueprintCallable, Category = "C++ API")
-	void SendMessage(const FString& msg);
+	void SendMessage(const std::string& msg);
 	void RegisterToGame();
 
 	UFUNCTION(BlueprintImplementableEvent, Category = "Override C++")

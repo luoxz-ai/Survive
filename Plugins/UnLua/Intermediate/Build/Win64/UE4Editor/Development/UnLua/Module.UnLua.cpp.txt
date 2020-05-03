@@ -310,6 +310,16 @@ d:\epic games\ue_4.24\engine\source\runtime\projects\public\CustomBuildSteps.h
 d:\epic games\ue_4.24\engine\source\runtime\projects\public\LocalizationDescriptor.h
 d:\epic games\ue_4.24\engine\source\runtime\projects\public\PluginReferenceDescriptor.h
 D:\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Public\GameDelegates.h
+E:/ouczbs/Survive/Plugins/UnLua/Source/UnLua/Private/LuaCore.cpp
+e:\ouczbs\survive\plugins\unlua\source\unlua\private\ReflectionUtils/FieldDesc.h
+E:\ouczbs\Survive\Plugins\UnLua\Source\ThirdParty\Lua\include\lfunc.h
+e:\ouczbs\survive\plugins\unlua\source\thirdparty\lua\include\lobject.h
+e:\ouczbs\survive\plugins\unlua\source\thirdparty\lua\include\llimits.h
+E:\ouczbs\Survive\Plugins\UnLua\Source\ThirdParty\Lua\include\lstate.h
+e:\ouczbs\survive\plugins\unlua\source\thirdparty\lua\include\ltm.h
+e:\ouczbs\survive\plugins\unlua\source\thirdparty\lua\include\lzio.h
+e:\ouczbs\survive\plugins\unlua\source\thirdparty\lua\include\lmem.h
+E:\Windows Kits\10\include\10.0.17763.0\ucrt\signal.h
 E:/ouczbs/Survive/Plugins/UnLua/Source/UnLua/Private/LuaDynamicBinding.cpp
 E:\ouczbs\Survive\Plugins\UnLua\Source\ThirdParty\Lua\include\lua.hpp
 E:/ouczbs/Survive/Plugins/UnLua/Source/UnLua/Private/LuaFunctionInjection.cpp
@@ -325,7 +335,6 @@ E:/ouczbs/Survive/Plugins/UnLua/Source/UnLua/Private/MathLib/LuaLib_FVector.cpp
 E:/ouczbs/Survive/Plugins/UnLua/Source/UnLua/Private/MathLib/LuaLib_FVector2.cpp
 E:/ouczbs/Survive/Plugins/UnLua/Source/UnLua/Private/MathLib/LuaLib_FVector4.cpp
 E:/ouczbs/Survive/Plugins/UnLua/Source/UnLua/Private/ReflectionUtils/ClassDesc.cpp
-e:\ouczbs\survive\plugins\unlua\source\unlua\private\reflectionutils\FieldDesc.h
 e:\ouczbs\survive\plugins\unlua\source\unlua\private\reflectionutils\PropertyDesc.h
 E:/ouczbs/Survive/Plugins/UnLua/Source/UnLua/Private/ReflectionUtils/FunctionDesc.cpp
 E:/ouczbs/Survive/Plugins/UnLua/Source/UnLua/Private/ReflectionUtils/PropertyCreator.cpp

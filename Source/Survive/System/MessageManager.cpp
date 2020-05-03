@@ -53,9 +53,9 @@ void AMessageManager::Connect(const FString& Host)
 	};
 	message->PostConnect();
 }
-void AMessageManager::SendMessage(const FString& msg) {
+void AMessageManager::SendMessage(const std::string& msg) {
 	//UE_LOG(LogTemp, Log, msg);
-	message->SendPbcMessage(TCHAR_TO_UTF8(*msg));
+	message->SendPbcMessage(msg);
 }
 void AMessageManager::RegisterToGame()
 {
