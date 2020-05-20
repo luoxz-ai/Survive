@@ -14,12 +14,12 @@ function class:OverrideInitGame()
     require "World"
     --创建各种message
     local WorldContext = self:GetWorld()
-    gworld = GA.World.new()
-    gworld:InitializeWorld(WorldContext)
+    gWorld = GA.World.new()
+    gWorld:InitializeWorld(WorldContext)
 end
 function class:ReceiveBeginPlay()
     print("ReceiveBeginPlay GameMode")
-    gworld:beginPlay()
+    gWorld:beginPlay()
     print(self.Object.Super)
     print(self.Object.Respawn)
     print(self:Respawn(true))
@@ -31,9 +31,9 @@ end
 --]]
 
 function class:ReceiveTick(DeltaSeconds)
-    if gworld then
-        gworld:tick(DeltaSeconds)
-        gworld:lateTick(DeltaSeconds)
+    if gWorld then
+        gWorld:tick(DeltaSeconds)
+        gWorld:lateTick(DeltaSeconds)
     end
 end
 

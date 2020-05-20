@@ -10,7 +10,7 @@ function class:beginPlay()
     --local anim = pawn.Mesh:GetAnimInstance()
 end
 function class:BlueprintInitializeAnimation()
-    gworld.message_beginPlay:addListener(self , "beginPlay")
+    gWorld.message_beginPlay:addListener(self , "beginPlay")
 end
 
 

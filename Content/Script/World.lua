@@ -1,12 +1,12 @@
+if WITH_LUAIDE_DEBUG then
+    require("socket.core")
+    require("LuaPanda").start("127.0.0.1",8818)
+end
 require "GameCore.GC"
 require "GamePlay.GP"
 require "GameManage.GM"
 require "GameWorld.GW"
 require "Network.Network_Module"
-if WITH_LUAIDE_DEBUG then
-    require("socket.core")
-    require("LuaPanda").start("127.0.0.1",8818)
-end
 local class = class(GA,"World")
 local var = GA.GameCore.Core.Var
 Pbc = GA.Network.Pbc
@@ -21,6 +21,9 @@ function class:InitializeWorld(WorldContext)
     host = "127.0.0.1:8999"
     self.MessageManager:Connect(host);
     --self.MessageManager:SendMessage("sad");
+end
+function class:getWorldContext()
+    return self._uWorldContext
 end
 function class:setWorld(world)
     self.world = world

@@ -7,13 +7,13 @@ function class:GetUnluaBind()
     return GA.BpClass.BP_MessageManager,"GameWorld.Character.CharacterControl"
 end
 function class:ReceiveBeginPlay()
-    gworld.message_beginPlay:addListener(self , "beginPlay")
+    gWorld.message_beginPlay:addListener(self , "beginPlay")
 end
 function class:tick()
 
 end
 function class:beginPlay()
-    self.m_player = gworld.playerNet:getPlayerInputHandle()
+    self.m_player = gWorld.playerNet:getPlayerInputHandle()
 end
 
 function class:MoveForward(axisValue)

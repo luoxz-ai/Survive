@@ -28,7 +28,7 @@
 /wd4838
 /we4668
 /I .
-/I E:\ouczbs\Survive\Plugins\PbcLib\Source\PbcLib\Private
+/I D:\ouczbs\Survive\Plugins\PbcLib\Source\PbcLib\Private
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\CoreUObject
 /I Runtime
 /I Runtime\CoreUObject\Public
@@ -525,14 +525,14 @@
 /I Runtime\ClothingSystemRuntimeInterface
 /I Runtime\AudioMixerCore\Public
 /I Runtime\AudioMixerCore
-/I E:\ouczbs\Survive\Plugins\PbcLib\Source
-/I E:\ouczbs\Survive\Plugins\PbcLib\Source\PbcLib\Public
-/I E:\ouczbs\Survive\Plugins\PbcLib\Source\PbcLib
-/I E:\ouczbs\Survive\Plugins\UnLua\Intermediate\Build\Win64\UE4Editor\Inc\UnLua
-/I E:\ouczbs\Survive\Plugins\UnLua\Source
-/I E:\ouczbs\Survive\Plugins\UnLua\Source\UnLua\Public
-/I E:\ouczbs\Survive\Plugins\UnLua\Source\UnLua
-/I E:\ouczbs\Survive\Plugins\UnLua\Source\ThirdParty
+/I D:\ouczbs\Survive\Plugins\PbcLib\Source
+/I D:\ouczbs\Survive\Plugins\PbcLib\Source\PbcLib\Public
+/I D:\ouczbs\Survive\Plugins\PbcLib\Source\PbcLib
+/I D:\ouczbs\Survive\Plugins\UnLua\Intermediate\Build\Win64\UE4Editor\Inc\UnLua
+/I D:\ouczbs\Survive\Plugins\UnLua\Source
+/I D:\ouczbs\Survive\Plugins\UnLua\Source\UnLua\Public
+/I D:\ouczbs\Survive\Plugins\UnLua\Source\UnLua
+/I D:\ouczbs\Survive\Plugins\UnLua\Source\ThirdParty
 /I ThirdParty\PhysX3\PxShared\include
 /I ThirdParty\PhysX3\PxShared\include\cudamanager
 /I ThirdParty\PhysX3\PxShared\include\filebuf
@@ -556,19 +556,19 @@
 /I ThirdParty\PhysX3\APEX_1.4\shared\general\RenderDebug\public
 /I ThirdParty\PhysX3\APEX_1.4\shared\general\PairFilter\include
 /I ThirdParty\PhysX3\APEX_1.4\shared\internal\include
-/I E:\ouczbs\Survive\Plugins\UnLua\Source\ThirdParty\Lua\include
-/I "E:\Microsoft Visual Studio\2019\VC\Tools\MSVC\14.16.27023\INCLUDE"
-/I "C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"
-/I "E:\Windows Kits\10\include\10.0.17763.0\ucrt"
-/I "E:\Windows Kits\10\include\10.0.17763.0\shared"
-/I "E:\Windows Kits\10\include\10.0.17763.0\um"
-/I "E:\Windows Kits\10\include\10.0.17763.0\winrt"
-/FI"E:\ouczbs\Survive\Intermediate\Build\Win64\SurviveEditor\Development\Engine\SharedPCH.Engine.h"
-/Yu"E:\ouczbs\Survive\Intermediate\Build\Win64\SurviveEditor\Development\Engine\SharedPCH.Engine.h"
-/Fp"E:\ouczbs\Survive\Intermediate\Build\Win64\SurviveEditor\Development\Engine\SharedPCH.Engine.h.pch"
-"E:\ouczbs\Survive\Plugins\PbcLib\Intermediate\Build\Win64\UE4Editor\Development\PbcLib\Module.PbcLib.cpp"
-/FI"E:\ouczbs\Survive\Plugins\PbcLib\Intermediate\Build\Win64\UE4Editor\Development\PbcLib\Definitions.PbcLib.h"
-/Fo"E:\ouczbs\Survive\Plugins\PbcLib\Intermediate\Build\Win64\UE4Editor\Development\PbcLib\Module.PbcLib.cpp.obj"
+/I D:\ouczbs\Survive\Plugins\UnLua\Source\ThirdParty\Lua\include
+/I "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\INCLUDE"
+/I "C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.2\include\um"
+/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"
+/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"
+/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"
+/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"
+/FI"D:\ouczbs\Survive\Intermediate\Build\Win64\SurviveEditor\Development\Engine\SharedPCH.Engine.h"
+/Yu"D:\ouczbs\Survive\Intermediate\Build\Win64\SurviveEditor\Development\Engine\SharedPCH.Engine.h"
+/Fp"D:\ouczbs\Survive\Intermediate\Build\Win64\SurviveEditor\Development\Engine\SharedPCH.Engine.h.pch"
+"D:\ouczbs\Survive\Plugins\PbcLib\Intermediate\Build\Win64\UE4Editor\Development\PbcLib\Module.PbcLib.cpp"
+/FI"D:\ouczbs\Survive\Plugins\PbcLib\Intermediate\Build\Win64\UE4Editor\Development\PbcLib\Definitions.PbcLib.h"
+/Fo"D:\ouczbs\Survive\Plugins\PbcLib\Intermediate\Build\Win64\UE4Editor\Development\PbcLib\Module.PbcLib.cpp.obj"
 /TP
 /GR-
 /W4

@@ -6,8 +6,8 @@
 /NAME:"UE4Editor-PbcLib.dll"
 /IGNORE:4221
 /NODEFAULTLIB
-"E:\ouczbs\Survive\Intermediate\Build\Win64\SurviveEditor\Development\Engine\SharedPCH.Engine.h.obj"
-"E:\ouczbs\Survive\Plugins\PbcLib\Intermediate\Build\Win64\UE4Editor\Development\PbcLib\Module.PbcLib.cpp.obj"
-"E:\ouczbs\Survive\Plugins\PbcLib\Intermediate\Build\Win64\UE4Editor\Development\PbcLib\Default.rc2.res"
-/OUT:"E:\ouczbs\Survive\Plugins\PbcLib\Intermediate\Build\Win64\UE4Editor\Development\PbcLib\UE4Editor-PbcLib.lib"
+"D:\ouczbs\Survive\Intermediate\Build\Win64\SurviveEditor\Development\Engine\SharedPCH.Engine.h.obj"
+"D:\ouczbs\Survive\Plugins\PbcLib\Intermediate\Build\Win64\UE4Editor\Development\PbcLib\Module.PbcLib.cpp.obj"
+"D:\ouczbs\Survive\Plugins\PbcLib\Intermediate\Build\Win64\UE4Editor\Development\PbcLib\Default.rc2.res"
+/OUT:"D:\ouczbs\Survive\Plugins\PbcLib\Intermediate\Build\Win64\UE4Editor\Development\PbcLib\UE4Editor-PbcLib.lib"
 /INCLUDE:IMPLEMENT_MODULE_PbcLib

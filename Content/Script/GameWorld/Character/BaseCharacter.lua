@@ -10,7 +10,7 @@ function class:beginPlay()
 end
 
 function class:ReceiveBeginPlay()
-    gworld.message_beginPlay:addListener(self , "beginPlay")
+    gWorld.message_beginPlay:addListener(self , "beginPlay")
 end
 
 function class:ReceiveEndPlay()

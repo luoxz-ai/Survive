@@ -47,7 +47,7 @@ function class:lateTick(dt)
 end
 
 function class:BlueprintInitializeAnimation()
-    gworld.message_beginPlay:addListener(self , "beginPlay")
+    gWorld.message_beginPlay:addListener(self , "beginPlay")
 end
 
 -- function class:BlueprintUpdateAnimation(dt)
